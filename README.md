@@ -11,3 +11,7 @@ This application is a simple mom and pop store management system, where it can m
 - Gorm
 - Mysql
 - Viper
+
+## Disclaimer
+
+Feel free to use it in anyway you want
