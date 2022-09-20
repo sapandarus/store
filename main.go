@@ -8,6 +8,7 @@ import (
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
 
+	"store/controller/item"
 	"store/controller/store"
 	"store/controller/supplier"
 	"store/controller/user"
@@ -27,6 +28,8 @@ func main() {
 	user.Init(db, r)
 	store.Init(db, r)
 	supplier.Init(db, r)
+	item.InitCategory(db, r)
+	item.InitItemInformation(db, r)
 
 	r.Run(":8080")
 }
